@@ -29,7 +29,3 @@
     background-color: #A594F9;
     color: #fff;
 } 
-
-#modal:target {
-    display: flex;
-}
