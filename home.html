@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind CSS Complex Example</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 p-6">
+<body class="bg-blue-900">
     <div class="topnav">
         <a class="active" href="#home">Home</a>
         <a href="#about-container">About Us</a>
@@ -14,7 +15,435 @@
         <a href="#feature-container">Features</a>
         <a href="#contact-container">Contact Us</a>
       </div>
+        <!--Table-->
+        <div class="relative overflow-y-auto shadow-md sm:rounded-lg mt-20 ">
+            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                        <th scope="col" class="p-4">
+                            <div class="flex items-center">
+                                <input id="checkbox-all-search" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="checkbox-all-search" class="sr-only">checkbox</label>
+                            </div>
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Name
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Job title
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Department
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Email
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Additional
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <td class="w-4 p-4">
+                            <div class="flex items-center">
+                                <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                            </div>
+                        </td>
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            Ivan Petrov
+                        </th>
+                        <td class="px-6 py-4">
+                            SoftwareEnginee
+                        </td>
+                        <td class="px-6 py-4">
+                            IT
+                        </td>
+                        <td class="px-6 py-4">
+                            ivan.petrov@sinksrus.com
+                        </td>
+                        <td class="flex items-center px-6 py-4">
+                            <a href="#modal1" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">More</a>
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <td class="w-4 p-4">
+                            <div class="flex items-center">
+                                <input id="checkbox-table-search-2" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="checkbox-table-search-2" class="sr-only">checkbox</label>
+                            </div>
+                        </td>
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            Pedro Los Baños
+                        </th>
+                        <td class="px-6 py-4">
+                            Marketing Manager
+                        </td>
+                        <td class="px-6 py-4">
+                            Marketing
+                        </td>
+                        <td class="px-6 py-4">
+                            pedro_los_banos@sinksrus.com
+                        </td>
+                        <td class="flex items-center px-6 py-4">
+                            <a href="#modal2" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">More</a>
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <td class="w-4 p-4">
+                            <div class="flex items-center">
+                                <input id="checkbox-table-search-3" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="checkbox-table-search-3" class="sr-only">checkbox</label>
+                            </div>
+                        </td>
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            Ana Gómez
+                        </th>
+                        <td class="px-6 py-4">
+                            HR Specialist
+                        </td>
+                        <td class="px-6 py-4">
+                            HR
+                        </td>
+                        <td class="px-6 py-4">
+                            ana.gomez@sinksrus.com
+                        </td>
+                        <td class="flex items-center px-6 py-4">
+                            <a href="#modal3" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">More</a>
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <td class="w-4 p-4">
+                            <div class="flex items-center">
+                                <input id="checkbox-table-search-3" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="checkbox-table-search-3" class="sr-only">checkbox</label>
+                            </div>
+                        </td>
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            John Wu
+                        </th>
+                        <td class="px-6 py-4">
+                            Sales Associate
+                        </td>
+                        <td class="px-6 py-4">
+                            Sales
+                        </td>
+                        <td class="px-6 py-4">
+                            john.wu@sinksrus.com
+                        </td>
+                        <td class="flex items-center px-6 py-4">
+                            <a href="#modal4" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">More</a>
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <td class="w-4 p-4">
+                            <div class="flex items-center">
+                                <input id="checkbox-table-search-3" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="checkbox-table-search-3" class="sr-only">checkbox</label>
+                            </div>
+                        </td>
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            Emma Wilson
+                        </th>
+                        <td class="px-6 py-4">
+                            CEO
+                        </td>
+                        <td class="px-6 py-4">
+                            Admin
+                        </td>
+                        <td class="px-6 py-4">
+                            emma@sinksrus.com
+                        </td>
+                        <td class="flex items-center px-6 py-4">
+                            <a href="#modal5" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">More</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-  
+        <!-- Modal -->
+        <div id="modal1" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
+            <div
+                class="profile-card w-[300px] rounded-md shadow-xl overflow-hidden z-[100] relative cursor-pointer snap-start shrink-0 bg-white flex flex-col items-center justify-center gap-3 transition-all duration-300 group"
+                >
+                <div
+                    class="avatar w-full pt-5 flex items-center justify-center flex-col gap-1"
+                >
+                    <div
+                    class="img_container w-full flex items-center justify-center relative z-40 after:absolute after:h-[6px] after:w-full after:bg-[#58b0e0] after:top-4 after:group-hover:size-[1%] after:delay-300 after:group-hover:delay-0 after:group-hover:transition-all after:group-hover:duration-300 after:transition-all after:duration-300 before:absolute before:h-[6px] before:w-full before:bg-[#58b0e0] before:bottom-4 before:group-hover:size-[1%] before:delay-300 before:group-hover:delay-0 before:group-hover:transition-all before:group-hover:duration-300 before:transition-all before:duration-300"
+                    >
+                    <svg
+                        class="size-36 z-40 border-4 border-white rounded-full group-hover:border-8 group-hover:transition-all group-hover:duration-300 transition-all duration-300"
+                        id="avatar"
+                        viewBox="0 0 61.8 61.8"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                    
+                            <circle fill="#58b0e0" r="30.9" cy="30.9" cx="30.9"></circle> 
+                    </svg>
+                    <div
+                        class="absolute bg-[#58b0e0] z-10 size-[60%] w-full group-hover:size-[1%] group-hover:transition-all group-hover:duration-300 transition-all duration-300 delay-700 group-hover:delay-0"
+                    ></div>
+                    </div>
+                </div>
+                <div class="headings *:text-center *:leading-4">
+                    <p class="text-xl font-serif font-semibold text-[#434955]">Ivan Petrov</p>
+                    <p class="text-sm font-semibold text-[#434955]">Software Engineer</p>
+                </div>
+                <div class="w-full items-center justify-center flex">
+                    <ul
+                    class="flex flex-col items-start gap-2 has-[:last]:border-b-0 *:inline-flex *:gap-2 *:items-center *:justify-center *:border-b-[1.5px] *:border-b-stone-700 *:border-dotted *:text-xs *:font-semibold *:text-[#434955] pb-3"
+                    >
+                    <li>
+                        <p>Contact: 555-6789</p>
+                    </li>
+                    <li>
+
+                        <p>Sex: Male</p>
+                    </li>
+                    <li>
+                        <p>Marital Status: Single</p>
+                    </li>
+                    <li>
+                        <p>Address: 12 Red Square, Moscow</p>
+                    </li>
+                    </ul>
+
+                </div>
+                <hr
+                    class="w-full group-hover:h-5 h-3 bg-[#58b0e0] group-hover:transition-all group-hover:duration-300 transition-all duration-300"
+                />
+                <a href="#" class="mb-2 bg-red-500 text-white px-4 py-2 rounded">Close</a>
+                </div>
+
+                
+        </div>
+
+        <div id="modal2" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
+            <div
+                class="profile-card w-[300px] rounded-md shadow-xl overflow-hidden z-[100] relative cursor-pointer snap-start shrink-0 bg-white flex flex-col items-center justify-center gap-3 transition-all duration-300 group"
+                >
+                <div
+                    class="avatar w-full pt-5 flex items-center justify-center flex-col gap-1"
+                >
+                    <div
+                    class="img_container w-full flex items-center justify-center relative z-40 after:absolute after:h-[6px] after:w-full after:bg-[#58b0e0] after:top-4 after:group-hover:size-[1%] after:delay-300 after:group-hover:delay-0 after:group-hover:transition-all after:group-hover:duration-300 after:transition-all after:duration-300 before:absolute before:h-[6px] before:w-full before:bg-[#58b0e0] before:bottom-4 before:group-hover:size-[1%] before:delay-300 before:group-hover:delay-0 before:group-hover:transition-all before:group-hover:duration-300 before:transition-all before:duration-300"
+                    >
+                    <svg
+                        class="size-36 z-40 border-4 border-white rounded-full group-hover:border-8 group-hover:transition-all group-hover:duration-300 transition-all duration-300"
+                        id="avatar"
+                        viewBox="0 0 61.8 61.8"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                    
+                            <circle fill="#58b0e0" r="30.9" cy="30.9" cx="30.9"></circle> 
+                    </svg>
+                    <div
+                        class="absolute bg-[#58b0e0] z-10 size-[60%] w-full group-hover:size-[1%] group-hover:transition-all group-hover:duration-300 transition-all duration-300 delay-700 group-hover:delay-0"
+                    ></div>
+                    </div>
+                </div>
+                <div class="headings *:text-center *:leading-4">
+                    <p class="text-xl font-serif font-semibold text-[#434955]">Pedro Los Baños</p>
+                    <p class="text-sm font-semibold text-[#434955]">Marketing Manager</p>
+                </div>
+                <div class="w-full items-center justify-center flex">
+                    <ul
+                    class="flex flex-col items-start gap-2 has-[:last]:border-b-0 *:inline-flex *:gap-2 *:items-center *:justify-center *:border-b-[1.5px] *:border-b-stone-700 *:border-dotted *:text-xs *:font-semibold *:text-[#434955] pb-3"
+                    >
+                    <li>
+                        <p>Contact: -</p>
+                    </li>
+                    <li>
+
+                        <p>Sex: Male</p>
+                    </li>
+                    <li>
+                        <p>Marital Status: Married</p>
+                    </li>
+                    <li>
+                        <p>Address: 123 Mabini St</p>
+                    </li>
+                    </ul>
+
+                </div>
+                <hr
+                    class="w-full group-hover:h-5 h-3 bg-[#58b0e0] group-hover:transition-all group-hover:duration-300 transition-all duration-300"
+                />
+                <a href="#" class="mb-2 bg-red-500 text-white px-4 py-2 rounded">Close</a>
+                </div>
+
+                
+        </div>
+
+        <div id="modal3" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
+            <div
+                class="profile-card w-[300px] rounded-md shadow-xl overflow-hidden z-[100] relative cursor-pointer snap-start shrink-0 bg-white flex flex-col items-center justify-center gap-3 transition-all duration-300 group"
+                >
+                <div
+                    class="avatar w-full pt-5 flex items-center justify-center flex-col gap-1"
+                >
+                    <div
+                    class="img_container w-full flex items-center justify-center relative z-40 after:absolute after:h-[6px] after:w-full after:bg-[#58b0e0] after:top-4 after:group-hover:size-[1%] after:delay-300 after:group-hover:delay-0 after:group-hover:transition-all after:group-hover:duration-300 after:transition-all after:duration-300 before:absolute before:h-[6px] before:w-full before:bg-[#58b0e0] before:bottom-4 before:group-hover:size-[1%] before:delay-300 before:group-hover:delay-0 before:group-hover:transition-all before:group-hover:duration-300 before:transition-all before:duration-300"
+                    >
+                    <svg
+                        class="size-36 z-40 border-4 border-white rounded-full group-hover:border-8 group-hover:transition-all group-hover:duration-300 transition-all duration-300"
+                        id="avatar"
+                        viewBox="0 0 61.8 61.8"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                    
+                            <circle fill="#58b0e0" r="30.9" cy="30.9" cx="30.9"></circle> 
+                    </svg>
+                    <div
+                        class="absolute bg-[#58b0e0] z-10 size-[60%] w-full group-hover:size-[1%] group-hover:transition-all group-hover:duration-300 transition-all duration-300 delay-700 group-hover:delay-0"
+                    ></div>
+                    </div>
+                </div>
+                <div class="headings *:text-center *:leading-4">
+                    <p class="text-xl font-serif font-semibold text-[#434955]">Ana Gómez</p>
+                    <p class="text-sm font-semibold text-[#434955]">HR Specialist</p>
+                </div>
+                <div class="w-full items-center justify-center flex">
+                    <ul
+                    class="flex flex-col items-start gap-2 has-[:last]:border-b-0 *:inline-flex *:gap-2 *:items-center *:justify-center *:border-b-[1.5px] *:border-b-stone-700 *:border-dotted *:text-xs *:font-semibold *:text-[#434955] pb-3"
+                    >
+                    <li>
+                        <p>Contact: 555-1526</p>
+                    </li>
+                    <li>
+
+                        <p>Sex: Female</p>
+                    </li>
+                    <li>
+                        <p>Marital Status: Divorced</p>
+                    </li>
+                    <li>
+                        <p>Address: -</p>
+                    </li>
+                    </ul>
+
+                </div>
+                <hr
+                    class="w-full group-hover:h-5 h-3 bg-[#58b0e0] group-hover:transition-all group-hover:duration-300 transition-all duration-300"
+                />
+                <a href="#" class="mb-2 bg-red-500 text-white px-4 py-2 rounded">Close</a>
+                </div>
+
+                
+        </div>
+        <div id="modal4" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
+            <div
+                class="profile-card w-[300px] rounded-md shadow-xl overflow-hidden z-[100] relative cursor-pointer snap-start shrink-0 bg-white flex flex-col items-center justify-center gap-3 transition-all duration-300 group"
+                >
+                <div
+                    class="avatar w-full pt-5 flex items-center justify-center flex-col gap-1"
+                >
+                    <div
+                    class="img_container w-full flex items-center justify-center relative z-40 after:absolute after:h-[6px] after:w-full after:bg-[#58b0e0] after:top-4 after:group-hover:size-[1%] after:delay-300 after:group-hover:delay-0 after:group-hover:transition-all after:group-hover:duration-300 after:transition-all after:duration-300 before:absolute before:h-[6px] before:w-full before:bg-[#58b0e0] before:bottom-4 before:group-hover:size-[1%] before:delay-300 before:group-hover:delay-0 before:group-hover:transition-all before:group-hover:duration-300 before:transition-all before:duration-300"
+                    >
+                    <svg
+                        class="size-36 z-40 border-4 border-white rounded-full group-hover:border-8 group-hover:transition-all group-hover:duration-300 transition-all duration-300"
+                        id="avatar"
+                        viewBox="0 0 61.8 61.8"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                    
+                            <circle fill="#58b0e0" r="30.9" cy="30.9" cx="30.9"></circle> 
+                    </svg>
+                    <div
+                        class="absolute bg-[#58b0e0] z-10 size-[60%] w-full group-hover:size-[1%] group-hover:transition-all group-hover:duration-300 transition-all duration-300 delay-700 group-hover:delay-0"
+                    ></div>
+                    </div>
+                </div>
+                <div class="headings *:text-center *:leading-4">
+                    <p class="text-xl font-serif font-semibold text-[#434955]">John Wu</p>
+                    <p class="text-sm font-semibold text-[#434955]">Sales Associate</p>
+                </div>
+                <div class="w-full items-center justify-center flex">
+                    <ul
+                    class="flex flex-col items-start gap-2 has-[:last]:border-b-0 *:inline-flex *:gap-2 *:items-center *:justify-center *:border-b-[1.5px] *:border-b-stone-700 *:border-dotted *:text-xs *:font-semibold *:text-[#434955] pb-3"
+                    >
+                    <li>
+                        <p>Contact: 555-6925</p>
+                    </li>
+                    <li>
+
+                        <p>Sex: Male</p>
+                    </li>
+                    <li>
+                        <p>Marital Status: Single</p>
+                    </li>
+                    <li>
+                        <p>Address: 456 Rizal St</p>
+                    </li>
+                    </ul>
+
+                </div>
+                <hr
+                    class="w-full group-hover:h-5 h-3 bg-[#58b0e0] group-hover:transition-all group-hover:duration-300 transition-all duration-300"
+                />
+                <a href="#" class="mb-2 bg-red-500 text-white px-4 py-2 rounded">Close</a>
+                </div>
+
+                
+        </div>
+        <div id="modal5" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
+            <div
+                class="profile-card w-[300px] rounded-md shadow-xl overflow-hidden z-[100] relative cursor-pointer snap-start shrink-0 bg-white flex flex-col items-center justify-center gap-3 transition-all duration-300 group"
+                >
+                <div
+                    class="avatar w-full pt-5 flex items-center justify-center flex-col gap-1"
+                >
+                    <div
+                    class="img_container w-full flex items-center justify-center relative z-40 after:absolute after:h-[6px] after:w-full after:bg-[#58b0e0] after:top-4 after:group-hover:size-[1%] after:delay-300 after:group-hover:delay-0 after:group-hover:transition-all after:group-hover:duration-300 after:transition-all after:duration-300 before:absolute before:h-[6px] before:w-full before:bg-[#58b0e0] before:bottom-4 before:group-hover:size-[1%] before:delay-300 before:group-hover:delay-0 before:group-hover:transition-all before:group-hover:duration-300 before:transition-all before:duration-300"
+                    >
+                    <svg
+                        class="size-36 z-40 border-4 border-white rounded-full group-hover:border-8 group-hover:transition-all group-hover:duration-300 transition-all duration-300"
+                        id="avatar"
+                        viewBox="0 0 61.8 61.8"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                    
+                            <circle fill="#58b0e0" r="30.9" cy="30.9" cx="30.9"></circle> 
+                    </svg>
+                    <div
+                        class="absolute bg-[#58b0e0] z-10 size-[60%] w-full group-hover:size-[1%] group-hover:transition-all group-hover:duration-300 transition-all duration-300 delay-700 group-hover:delay-0"
+                    ></div>
+                    </div>
+                </div>
+                <div class="headings *:text-center *:leading-4">
+                    <p class="text-xl font-serif font-semibold text-[#434955]">Emma Wilson</p>
+                    <p class="text-sm font-semibold text-[#434955]">CEO</p>
+                </div>
+                <div class="w-full items-center justify-center flex">
+                    <ul
+                    class="flex flex-col items-start gap-2 has-[:last]:border-b-0 *:inline-flex *:gap-2 *:items-center *:justify-center *:border-b-[1.5px] *:border-b-stone-700 *:border-dotted *:text-xs *:font-semibold *:text-[#434955] pb-3"
+                    >
+                    <li>
+                        <p>Contact: 555-1111</p>
+                    </li>
+                    <li>
+
+                        <p>Sex: Female</p>
+                    </li>
+                    <li>
+                        <p>Marital Status: Married</p>
+                    </li>
+                    <li>
+                        <p>Address: -</p>
+                    </li>
+                    </ul>
+
+                </div>
+                <hr
+                    class="w-full group-hover:h-5 h-3 bg-[#58b0e0] group-hover:transition-all group-hover:duration-300 transition-all duration-300"
+                />
+                <a href="#" class="mb-2 bg-red-500 text-white px-4 py-2 rounded">Close</a>
+                </div>
+        </div>
+        
 </body>
 </html>
