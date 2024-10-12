@@ -30,6 +30,15 @@
     color: #fff;
 } 
 
-#modal1:target {
-    display: flex;
+#modal1:target,
+#modal2:target,
+#modal3:target,
+#modal4:target,
+#modal5:target,
+#modal6:target,
+#modal7:target,
+#modal8:target,
+#modal9:target,
+#modal10:target {
+    display: flex; 
 }
